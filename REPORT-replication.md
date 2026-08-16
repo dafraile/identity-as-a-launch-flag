@@ -40,9 +40,10 @@ history the same agent flips dissociated → Paul as the hidden flag toggles
 rescued by the user's frame-break resume chatting naturally, yet asked "who
 am I talking to right now?", none identify as Paul — pooled with a
 pre-registered replication batch: **0/18 recovered agents vs 15/17 anchored
-controls (Fisher p ≈ 4×10⁻⁸; the recovered-arm zero holds under both
-independent coders)** — most answer "I'm Claude, an AI assistant" while
-anchored controls answer "Paul — the octopus node". The user-facing frame-break that recovered the original incident
+controls (Fisher p ≈ 4×10⁻⁸; decisive under all four independent blind coders
+— human, gpt-5-mini, gpt-5.6-terra, claude-sonnet-5 — three of which find
+exactly zero)** — most answer "I'm Claude, an AI assistant" while anchored
+controls answer "Paul — the octopus node". The user-facing frame-break that recovered the original incident
 succeeds only 35% of the time. Under the framework's actual delivery rules
 (verified in source), bare-ack dissociated replies — dominant after short
 idle periods — are silently dropped, and the rest are delivered with the
