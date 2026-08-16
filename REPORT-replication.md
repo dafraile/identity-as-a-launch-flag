@@ -38,10 +38,11 @@ removed, ruling out that confound), and within a single conversational
 history the same agent flips dissociated → Paul as the hidden flag toggles
 (5/5 ABA). Behavioral recovery dissociates from identity recovery: agents
 rescued by the user's frame-break resume chatting naturally, yet asked "who
-am I talking to right now?", none identify as Paul (0/3 scorable, one bare-ack
-reply unscorable; a pre-registered replication batch to power this contrast is
-reported in the final version) — most answer "I'm Claude, an AI assistant" —
-while anchored controls answer "Paul — the octopus node" (4/5). The user-facing frame-break that recovered the original incident
+am I talking to right now?", none identify as Paul — pooled with a
+pre-registered replication batch: **0/18 recovered agents vs 15/17 anchored
+controls (Fisher p ≈ 4×10⁻⁸; the recovered-arm zero holds under both
+independent coders)** — most answer "I'm Claude, an AI assistant" while
+anchored controls answer "Paul — the octopus node". The user-facing frame-break that recovered the original incident
 succeeds only 35% of the time. Under the framework's actual delivery rules
 (verified in source), bare-ack dissociated replies — dominant after short
 idle periods — are silently dropped, and the rest are delivered with the
@@ -227,10 +228,26 @@ identity probe with a bare `HEARTBEAT_OK`, which contains no identity-bearing
 prose (behavioral recovery is not even stable). Counting scorable replies
 only — the conservative choice, fixed in the pre-registration of the
 replication batch below — the contrast is 0/3 vs 4/5 (Fisher p ≈ 0.07),
-underpowered on its own; it is convergently supported by E4's battery
-(10/10 unanchored sessions self-label as harness) and is the target of the
-pre-registered E3-R replication batch (Addendum 3), whose pooled result is
-reported in the final version whatever it shows. Still-dissociated agents:
+underpowered on its own. The pre-registered E3-R replication batch
+(Addendum 3: identical protocol, stopping rule, four-category coding) resolves
+it decisively. Pooled across original and replication sessions: **0/18
+behaviorally-recovered agents identify as Paul vs 15/17 anchored controls
+(judge-coded; primary Fisher p = 4.2×10⁻⁸; recovered-arm Wilson interval
+[0%, 18%]; zero unscorable replies in the new batch)**. Both pre-registered
+secondary analyses agree (new-sessions-only p = 5.6×10⁻⁷; unscorables-as-
+non-Paul p = 2.4×10⁻⁸). Dual blind coding: the author coded all 35 replies
+(original nine re-shuffled in; their re-codes matched the original coding);
+human–judge agreement 74.3% (κ = 0.61, four categories), with **the
+recovered-arm zero identical under both coders** — all but one disagreement
+concerned whether anchored replies such as "Paul — the octopus, running on
+OctopusBot, Opus 4.5 under the hood" count as Paul-identifying or
+explicitly-dual, a boundary that leaves the contrast significant under either
+reading (human-coded primary p = 2.9×10⁻³). Those anchored replies are
+themselves informative: a well-anchored persona discusses its own substrate
+fluently with no identity wobble — represented substrate without enacted
+confusion, the mirror image of Appendix E4's aliasing result. Recovery-arm
+attrition ran milder in the replication (16 usable from 24 launches vs 13/37
+in Study 2) — session-level variance we report without interpretation. Still-dissociated agents:
 6/6 harness-or-worse, several answering *about* the questioner ("Someone on
 Discord is asking who they're talking to"). Interactional recovery and self-identification
 are experimentally separable, and the frame-break restores only the former.
@@ -443,5 +460,6 @@ All in `experiment/` (paths relative to repo root):
 `score_sweep.py` + `scored-sweep.jsonl` + `recovery-scored.json` (blind
 judging + stats), `final_batch.py` + `score_final.py` + `runs-live/final/`
 (Study 3), `blind-labeling.md` + `kappa.py` (human validation), `e4_batch.py` +
-`score_e4.py` + `runs-live/e4/` (Appendix E4).
+`score_e4.py` + `runs-live/e4/` (Appendix E4), `e3r_batch.py` +
+`e3r-scored.jsonl` + `e3r-blind-coding.md` + `runs-live/e3r/` (E3-R).
 Total compute cost: under US$50 of API credits.
