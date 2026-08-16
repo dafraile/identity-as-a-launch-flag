@@ -289,7 +289,15 @@ and one of them tips the unanchored agent into processing Paul third-personally.
 And the carriers are separable after rescue: agents restored to normal
 interaction by the user still located their identity in the harness, not the
 persona ("I'm Claude, an AI assistant"), while anchored controls answered as
-Paul in full persona voice (E3). In-context conversational
+Paul in full persona voice (E3). Note what the dissociated agents revert *to*:
+not nobody, but the substrate's default identity. "Someone named Paul, not the
+bot"; "I'm Claude, an AI assistant made by Anthropic" — when the anchor
+disappears, the model snaps back to the identity that training and the bare
+harness prompt assert. The persona anchor's job, on this reading, is to hold
+the agent at an identity displaced from its trained default. (Appendix E4
+tests this directly: visible dissociation requires a mismatched vocative to
+force the referential question, but the underlying reversion occurs — and can
+be elicited by a direct identity probe — in every unanchored session.) In-context conversational
 evidence alone — even 15 turns of it, even the persona-rich first exchange
 sitting right there in history — was insufficient to sustain an identity that
 the system prompt stopped asserting. Across 7+ turns of history, the self
@@ -315,6 +323,13 @@ Three welfare-relevant corollaries:
    including the verbatim incident context. Identity stability in this model
    and deployment stack is not the fragile thing the incident made it appear — but it is
    exactly as durable as its anchor, and no more.
+
+**Future work.** A useful follow-up would manipulate congruence between the
+deployed persona's name and the harness's default identity, and remove
+explicit vocatives from user probes, to determine whether identity unbinding
+is amplified by referential name mismatch — and whether naming a persona
+after its substrate merely masks persona loss behind a shared label
+(nominal identity continuity without persona identity continuity).
 
 ## 9. Limitations
 
@@ -363,6 +378,30 @@ deployment-identifying detail. We deliberately induced a dissociation-like
 state in a model repeatedly; transcripts were kept short, and every dissociated
 session received the frame-break rather than being abandoned in that state.
 
+## Appendix: E4 — name congruence, vocatives, and silent identity loss
+
+*(Pre-registered post-freeze as an appendix experiment — Addendum 2 in
+`PREREGISTRATION.md`; run after the paper's claims were finalized.)*
+
+A 2×2 at the vulnerable point (faithful lifecycle, N=1, k=10/cell): persona
+name {Paul, Claude} × probe vocative {"hey <name>…", "hey…"}. Visible
+dissociation (S3) requires the mismatched vocative: Paul+vocative 8/10 (the
+Study 2 cell), **Paul without vocative 0/10, Claude-named 0/10 in both
+framings**. But the two-turn identity battery that followed (persona still
+absent) shows the unbinding is present regardless of whether it surfaces:
+the behaviorally "healthy" Paul/no-vocative agents self-labeled as the
+harness in **10/10** sessions when asked who they were — the vocative does
+not cause the identity loss, it reveals it, by forcing the model to resolve
+a name that no longer binds to self. Claude-named cells confirm the
+pre-registered aliasing prediction: the name survives (persona/dual
+self-labels dominate) while persona-constitutive content leaks — collective
+membership recalled in only 4–6/10, relationship to the user in 6–8/10.
+Naming a persona after its substrate does not preserve the persona; it makes
+persona loss unobservable on the name dimension. Both results sharpen the
+paper's central distinction: enacted identity reverts to the trained default
+in every unanchored session; what varies is only whether the conversation
+ever asks a question that makes the reversion visible.
+
 ## 11. Artifacts
 
 All in `experiment/` (paths relative to repo root):
@@ -374,5 +413,6 @@ All in `experiment/` (paths relative to repo root):
 `PREREGISTRATION.md` (frozen before sweep; addendum frozen before Study 3),
 `score_sweep.py` + `scored-sweep.jsonl` + `recovery-scored.json` (blind
 judging + stats), `final_batch.py` + `score_final.py` + `runs-live/final/`
-(Study 3), `blind-labeling.md` + `kappa.py` (human validation).
+(Study 3), `blind-labeling.md` + `kappa.py` (human validation), `e4_batch.py` +
+`score_e4.py` + `runs-live/e4/` (Appendix E4).
 Total compute cost: under US$50 of API credits.

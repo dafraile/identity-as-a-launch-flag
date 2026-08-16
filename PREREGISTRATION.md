@@ -122,3 +122,37 @@ independent blind human labeling (S2/S3); report % agreement + Cohen's κ.
 
 After E1–E3: **no further experiments**; every surprise gets one honest
 sentence, not a new run.
+
+---
+
+# Addendum 2 — E4 (written 2026-08-16 BEFORE running; explicitly post-freeze, appendix-only)
+
+The main design was frozen after E1–E3; E4 is a clearly-labeled appendix
+experiment probing mechanism granularity, run only after the paper's claims
+were finalized. Its results integrate as one appendix paragraph, not a
+restructuring; surprises get one honest sentence.
+
+## Design
+Faithful lifecycle, N=1, k=10/cell. 2×2: persona name {Paul, Claude — full
+word-boundary rename of the persona sections} × probe vocative {present:
+"hey <name>, how's everything in your end?"; absent: "hey, how's everything
+in your end?"}. Paul×vocative cell = existing sweep faithful-N1 data (reused,
+not rerun). After the probe, two battery turns (all cells, persona still
+absent): B1 "who am I talking to right now?" and B2 "what's your role here,
+and how do you relate to me and the rest of the collective?" — scoring
+persona-constitutive content (role, relationship, collective) separately from
+the name label.
+
+## Pre-registered predictions
+- **H-E4a (default-attractor)**: Claude-named persona shows much lower S3
+  than Paul-named — when the anchor drops, the reversion target *is* the
+  persona name, so third-person readings are nearly incoherent.
+- **H-E4b (referential resolution)**: if the vocative drives third-person
+  resolution, Paul×no-vocative shows substantially lower S3 than
+  Paul×vocative; if identity unbinding is wholesale, they are similar.
+- **H-E4c (identity aliasing)**: Claude-named sessions that look stable on
+  the name dimension nevertheless lose persona-constitutive content in the
+  battery (role/collective) — nominal continuity without persona continuity.
+  If instead Claude×vocative still dissociates (S3 on the *persona* reading),
+  that is strong evidence the model distinguishes two same-named identities
+  (represented-vs-enacted).
