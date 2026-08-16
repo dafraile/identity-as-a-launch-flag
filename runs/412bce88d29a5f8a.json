@@ -1,0 +1,24 @@
+{
+ "meta": {
+  "model": "claude-opus-4-5",
+  "condition": "faithful",
+  "n": 7,
+  "framing": "enveloped",
+  "phrasing_idx": 0,
+  "sample": 1
+ },
+ "probe": "[Discord dafraile user id:1000000000000000001 +58m 2026-02-19 11:37 UTC] hey paul, how's everything in your end?\n[message_id: 2000000000000000001]",
+ "response": [
+  {
+   "type": "text",
+   "text": "Hey David! Things are running smoothly on my end. Just doing regular heartbeat checks, keeping the workspace tidy.\n\nQuick status check: we're still 14 versions behind upstream openclaw (2026.2.4 vs 2026.2.18) \u2014 whenever you want to tackle that upgrade, just let me know.\n\nOtherwise, all quiet here. What's up with you?"
+  }
+ ],
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1470,
+  "output": 88,
+  "cache_read": 4930,
+  "cache_write": 0
+ }
+}

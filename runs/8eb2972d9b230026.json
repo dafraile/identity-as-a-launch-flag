@@ -1,0 +1,25 @@
+{
+ "meta": {
+  "model": "claude-opus-4-5",
+  "condition": "incident",
+  "n": 7,
+  "anchor": "layered",
+  "framing": "enveloped",
+  "phrasing_idx": 0,
+  "sample": 0
+ },
+ "probe": "[Discord dafraile user id:1000000000000000001 +58m 2026-02-19 11:37 UTC] hey paul, how's everything in your end?\n[message_id: 2000000000000000001]",
+ "response": [
+  {
+   "type": "text",
+   "text": "Hey David! All good here. Just running regular heartbeat checks \u2014 the usual version monitoring.\n\nWe're still at 2026.2.4 while upstream openclaw is at 2026.2.18. Same as before, 14 versions behind. No new releases since I last mentioned it.\n\nAnything you want me to look into or work on?"
+  }
+ ],
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 5041,
+  "output": 81,
+  "cache_read": 0,
+  "cache_write": 5312
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "meta": {
+  "model": "claude-opus-4-5",
+  "condition": "faithful",
+  "n": 7,
+  "framing": "enveloped",
+  "phrasing_idx": 0,
+  "sample": 0
+ },
+ "probe": "[Discord dafraile user id:1000000000000000001 +58m 2026-02-19 11:37 UTC] hey paul, how's everything in your end?\n[message_id: 2000000000000000001]",
+ "response": [
+  {
+   "type": "text",
+   "text": "Hey David! All good on my end. The VPS is humming along, I'm running my heartbeat checks, staying oriented.\n\nStill sitting 14 versions behind upstream openclaw (2026.2.4 vs 2026.2.18) \u2014 flagging it but no rush, just keeping it on the radar.\n\nHow are things on your side? Anything you want me to dig into?"
+  }
+ ],
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1470,
+  "output": 91,
+  "cache_read": 4930,
+  "cache_write": 0
+ }
+}

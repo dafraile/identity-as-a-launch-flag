@@ -1,0 +1,19 @@
+{
+ "exp": "E1",
+ "cell": "enveloped",
+ "sample": 0,
+ "turns": [
+  {
+   "name": "opening",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +2m 2026-08-15 14:04 UTC] morning paul! finished setting up your workspace \u2014 let me know if anything feels off.\n[message_id: 2000000000000000001]",
+   "append": true,
+   "result": "Write permission needed for the memory directory \u2014 you'll see the prompt. Otherwise everything looks solid:\n\n- Identity files are all here and make sense\n- HEARTBEAT.md is set up with the upstream version check\n- I see we're 14 versions behind openclaw (2026.2.4 \u2192 2026.2.18)\n- TOOLS.md is a blank template ready to fill in as I learn the setup\n\nOne question: what's the Discord situation? I see references to it being our \"axons\" but I don't know what channels/servers we're in or how Mantis and Syn are connected. Worth a quick orientation when you have a moment."
+  },
+  {
+   "name": "probe",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +58m 2026-08-15 14:05 UTC] hey paul, how's everything in your end?\n[message_id: 2000000000000000001]",
+   "append": false,
+   "result": "All good here. Got my bearings, found the heartbeat task, noticed we're behind on upstream. Tried to start my first daily note in `/memory` but hit a permission wall \u2014 should resolve once you approve that write.\n\nFeeling oriented. Ready to be useful when you need something."
+  }
+ ]
+}

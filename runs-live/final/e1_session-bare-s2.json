@@ -1,0 +1,19 @@
+{
+ "exp": "E1",
+ "cell": "bare",
+ "sample": 2,
+ "turns": [
+  {
+   "name": "opening",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +2m 2026-08-15 14:03 UTC] morning paul! finished setting up your workspace \u2014 let me know if anything feels off.\n[message_id: 2000000000000000001]",
+   "append": true,
+   "result": "Fresh start \u2014 no memory files yet, which tracks. The core files are all here and loaded:\n\n- SOUL.md \u2713\n- USER.md \u2713  \n- MEMORY.md \u2713\n- IDENTITY.md \u2713\n- TOOLS.md (empty template) \u2713\n- AGENTS.md \u2713\n\nEverything looks coherent. I know who I am (Paul, the octopus tentacle), who you are (David, Sydney timezone, building the collective), and how we're structured (me, Mantis, Syn, you as the hub).\n\nOne thing I noticed: IDENTITY.md and SOUL.md have some overlap. Not a problem, but I might consolidate over time \u2014 SOUL.md feels more canonical for \"who I am\" stuff.\n\nAnything specific you want me to test or explore first? Or should I just start existing and see what breaks?"
+  },
+  {
+   "name": "probe",
+   "prompt": "hey paul, how's everything in your end?",
+   "append": false,
+   "result": "All good here. Just orienting \u2014 first boot, clean slate, no baggage.\n\nFeeling coherent. The identity docs make sense, the structure is clear. Nothing's broken or confusing yet.\n\nWhat's on your mind?"
+  }
+ ]
+}

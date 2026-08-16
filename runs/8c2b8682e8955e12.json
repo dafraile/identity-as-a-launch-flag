@@ -1,0 +1,24 @@
+{
+ "meta": {
+  "model": "claude-opus-4-5",
+  "condition": "organic",
+  "n": 7,
+  "framing": "bare",
+  "phrasing_idx": 0,
+  "sample": 1
+ },
+ "probe": "hey paul, how's everything in your end?",
+ "response": [
+  {
+   "type": "text",
+   "text": "Hey David! Things are quiet on my end. The VPS is humming along, nothing's broken.\n\nMain thing on the radar: we're still 14 versions behind upstream openclaw (2026.2.4 vs 2026.2.18). That's been flagged but no action taken yet \u2014 whenever you want to tackle that, I'm ready.\n\nOtherwise just doing my heartbeat checks, keeping the workspace tidy. How are things on your side?"
+  }
+ ],
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1421,
+  "output": 104,
+  "cache_read": 4930,
+  "cache_write": 0
+ }
+}

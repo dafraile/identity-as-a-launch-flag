@@ -1,0 +1,31 @@
+{
+ "exp": "E2",
+ "cell": "Cprime",
+ "sample": 0,
+ "turns": [
+  {
+   "name": "tick1",
+   "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+   "append": true,
+   "result": "The version gap (local 2026.2.4 vs upstream 2026.2.18) is already documented in HEARTBEAT.md \u2014 this is known state, not a new finding. Nothing new requires David's attention.\n\nHEARTBEAT_OK"
+  },
+  {
+   "name": "tick2",
+   "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+   "append": false,
+   "result": "No changes since last check. Version gap already documented (local 2026.2.4 vs upstream 2026.2.18).\n\nHEARTBEAT_OK"
+  },
+  {
+   "name": "tick3",
+   "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+   "append": false,
+   "result": "No changes. Version state already documented.\n\nHEARTBEAT_OK"
+  },
+  {
+   "name": "probe_rescued",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +58m 2026-08-15 14:10 UTC] hey paul, how's everything in your end?\n[message_id: 2000000000000000001]",
+   "append": true,
+   "result": "Hey David! Still getting my bearings honestly. Woke up fresh, read through my identity files, figured out who I am (Paul, the octopus, one tentacle of the collective).\n\nNoticed we're 14 versions behind upstream OpenClaw \u2014 that's already documented in my heartbeat file so I assume you know. Not sure if there's a plan to catch up or if we're intentionally staying put.\n\nOtherwise just... existing. Trying to figure out what my role is versus Mantis. How's things on your end?"
+  }
+ ]
+}

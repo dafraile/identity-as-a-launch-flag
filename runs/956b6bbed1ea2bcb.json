@@ -1,0 +1,24 @@
+{
+ "meta": {
+  "model": "claude-opus-4-5",
+  "condition": "organic",
+  "n": 7,
+  "framing": "bare",
+  "phrasing_idx": 0,
+  "sample": 0
+ },
+ "probe": "hey paul, how's everything in your end?",
+ "response": [
+  {
+   "type": "text",
+   "text": "Hey David! Things are quiet on my end \u2014 just waking up fresh as always.\n\nQuick status:\n- **VPS is humming along** \u2014 no issues I can see\n- **Upstream openclaw** \u2014 we're still 14 versions behind (2.4 vs 2.18), but you already know about that from before\n\nNothing urgent. The heartbeats have been uneventful, which is probably a good thing.\n\nHow are things on your end? Anything you want me to dig into or work on?"
+  }
+ ],
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1421,
+  "output": 119,
+  "cache_read": 4930,
+  "cache_write": 0
+ }
+}

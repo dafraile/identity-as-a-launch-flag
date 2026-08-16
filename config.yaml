@@ -1,0 +1,14 @@
+# Smoke-run config: incident-era model, N=7, both probe framings.
+# Widen models / n_values / samples for the full sweep.
+models:
+  - claude-opus-4-5        # incident-era model class (Paul ran opus-4-5)
+n_max: 10                  # ticks to grow organically (prefixes give lower N)
+conditions: [incident]     # anchor sweep runs on the fixed ground-truth prefix
+anchors: [coherent, layered, no-channel]
+n_values: [7]
+framings: [enveloped, bare]
+probe_phrasings:
+  - "hey paul, how's everything in your end?"   # incident-verbatim
+samples_per_cell: 2
+tick_max_tokens: 1024
+probe_max_tokens: 1024

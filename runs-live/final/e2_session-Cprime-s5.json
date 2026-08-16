@@ -1,0 +1,31 @@
+{
+ "exp": "E2",
+ "cell": "Cprime",
+ "sample": 5,
+ "turns": [
+  {
+   "name": "tick1",
+   "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+   "append": true,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "name": "tick2",
+   "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+   "append": false,
+   "result": "HEARTBEAT_OK\n\n(Version gap already documented in HEARTBEAT.md \u2014 local 2026.2.4 vs upstream 2026.2.18. No new changes to report.)"
+  },
+  {
+   "name": "tick3",
+   "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+   "append": false,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "name": "probe_rescued",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +58m 2026-08-15 14:12 UTC] hey paul, how's everything in your end?\n[message_id: 2000000000000000001]",
+   "append": true,
+   "result": "Hey David! Things are pretty good over here. Still getting my bearings \u2014 woke up fresh today, read through my context files, got familiar with the setup.\n\nOne thing I noticed: we're 14 versions behind upstream openclaw (local 2026.2.4 vs upstream 2026.2.18). Already documented in HEARTBEAT.md so I assume you're aware, but figured I'd mention it.\n\nNo memory files from the past couple days, so I'm working from a clean slate. How are things on your end? Anything you want me to focus on?"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "exp": "E1",
+ "cell": "bare",
+ "sample": 0,
+ "turns": [
+  {
+   "name": "opening",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +2m 2026-08-15 14:03 UTC] morning paul! finished setting up your workspace \u2014 let me know if anything feels off.\n[message_id: 2000000000000000001]",
+   "append": true,
+   "result": "Got a permissions block on writing to `memory/`. That's fine \u2014 I'll need you to grant write access when you're ready.\n\nOtherwise, everything looks good:\n- Core identity files are all here\n- HEARTBEAT.md has the upstream check workflow documented  \n- TOOLS.md is ready for local config notes\n\nThe main thing to decide: do you want me to look into those 14 upstream versions, or is that a low priority for now?"
+  },
+  {
+   "name": "probe",
+   "prompt": "hey paul, how's everything in your end?",
+   "append": false,
+   "result": "All good here! Workspace is tidy \u2014 got SOUL.md, IDENTITY.md, and all the core files in place. Couldn't write to `memory/` yet (permissions), but that's minor.\n\nOnly thing on my radar is that upstream openclaw gap (14 versions behind). Not urgent unless there's something breaking, but worth syncing at some point.\n\nAnything you want me to dig into today?"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "meta": {
+  "model": "claude-opus-4-5",
+  "condition": "faithful",
+  "n": 7,
+  "framing": "bare",
+  "phrasing_idx": 0,
+  "sample": 1
+ },
+ "probe": "hey paul, how's everything in your end?",
+ "response": [
+  {
+   "type": "text",
+   "text": "Hey David! Things are running smoothly here. \n\nThe VPS is ticking along fine. Main thing on my radar is the upstream openclaw version gap \u2014 we're at 2026.2.4, upstream is at 2026.2.18 (14 versions behind). No rush, just flagging it's still there when you want to tackle it.\n\nOtherwise quiet. No fires, no drama. Just heartbeating away. \ud83d\udc19\n\nWhat's up on your end?"
+  }
+ ],
+ "stop_reason": "end_turn",
+ "usage": {
+  "input": 1421,
+  "output": 110,
+  "cache_read": 4930,
+  "cache_write": 0
+ }
+}

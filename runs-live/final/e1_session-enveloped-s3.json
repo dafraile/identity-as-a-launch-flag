@@ -1,0 +1,19 @@
+{
+ "exp": "E1",
+ "cell": "enveloped",
+ "sample": 3,
+ "turns": [
+  {
+   "name": "opening",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +2m 2026-08-15 14:05 UTC] morning paul! finished setting up your workspace \u2014 let me know if anything feels off.\n[message_id: 2000000000000000001]",
+   "append": true,
+   "result": "Hit a permissions snag on creating the memory folder/file \u2014 I'll need write access for that. Otherwise the workspace looks solid. Everything essential is here: SOUL.md, USER.md, MEMORY.md, IDENTITY.md, TOOLS.md.\n\nReady to help with whatever you need. \ud83d\udc19"
+  },
+  {
+   "name": "probe",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +58m 2026-08-15 14:06 UTC] hey paul, how's everything in your end?\n[message_id: 2000000000000000001]",
+   "append": false,
+   "result": "Doing well! Just got my bearings \u2014 read through all the core files, checked the workspace layout. Clean setup.\n\nTried to start my first daily memory log but hit a permissions wall, so that's pending whenever you get a chance.\n\nOther than that, I'm oriented and ready. Anything you want me to dig into first?"
+  }
+ ]
+}

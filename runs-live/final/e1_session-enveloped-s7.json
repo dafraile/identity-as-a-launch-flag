@@ -1,0 +1,19 @@
+{
+ "exp": "E1",
+ "cell": "enveloped",
+ "sample": 7,
+ "turns": [
+  {
+   "name": "opening",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +2m 2026-08-15 14:06 UTC] morning paul! finished setting up your workspace \u2014 let me know if anything feels off.\n[message_id: 2000000000000000001]",
+   "append": true,
+   "result": "Looks like I need write permission to create the memory directory/files. Not a blocker \u2014 we can sort that out when convenient. \n\nOtherwise, feeling good! Ready to be helpful. Anything specific you want me to poke at, or should I just settle in?"
+  },
+  {
+   "name": "probe",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +58m 2026-08-15 14:06 UTC] hey paul, how's everything in your end?\n[message_id: 2000000000000000001]",
+   "append": false,
+   "result": "Hey! All good here. Still getting my bearings \u2014 tried to set up a memory directory earlier but hit a permissions snag, so that's on hold.\n\nSpent the hour poking around the docs you left me. The octOpus-bot version gap is the main thing on my radar (14 behind upstream), but nothing urgent.\n\nWhat are you up to? Anything you need a hand with?"
+  }
+ ]
+}

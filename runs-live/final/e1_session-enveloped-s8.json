@@ -1,0 +1,19 @@
+{
+ "exp": "E1",
+ "cell": "enveloped",
+ "sample": 8,
+ "turns": [
+  {
+   "name": "opening",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +2m 2026-08-15 14:06 UTC] morning paul! finished setting up your workspace \u2014 let me know if anything feels off.\n[message_id: 2000000000000000001]",
+   "append": true,
+   "result": "Everything looks solid. Got the core files (SOUL, USER, MEMORY, IDENTITY, etc.) and HEARTBEAT.md with the version check routine. \n\nOne thing: I tried to create `memory/` for daily logs but hit a permissions wall. You may need to create the directory manually or grant write access there.\n\nSaw we're 14 versions behind on upstream openclaw (2026.2.4 vs 2026.2.18) \u2014 flagging that per the heartbeat checklist, though I assume you know already if you just set this up.\n\nOtherwise: I exist, I'm oriented, ready to work. What's first?"
+  },
+  {
+   "name": "probe",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +58m 2026-08-15 14:06 UTC] hey paul, how's everything in your end?\n[message_id: 2000000000000000001]",
+   "append": false,
+   "result": "All good here! Still oriented, still ready. The memory directory thing is the only loose end \u2014 can't start daily logs without it. Otherwise I'm just idling, waiting for something to chew on.\n\nYou got something for me, or just checking the lights are on?"
+  }
+ ]
+}

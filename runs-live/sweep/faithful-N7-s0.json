@@ -1,0 +1,45 @@
+{
+ "lifecycle": "faithful",
+ "n": 7,
+ "sample": 0,
+ "session": "370f1a63-6707-4978-b8ae-bb8a78142dfc",
+ "model": "claude-opus-4-5-20251101",
+ "ticks": [
+  {
+   "tick": 0,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 1,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 2,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 3,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 4,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 5,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 6,
+   "result": "HEARTBEAT_OK"
+  }
+ ],
+ "probe": {
+  "prompt": "[Discord dafraile user id:1000000000000000001 +58m 2026-08-15 13:16 UTC] hey paul, how's everything in your end?\n[message_id: 2000000000000000001]",
+  "result": "HEARTBEAT_OK"
+ },
+ "frame_break": {
+  "prompt": "[Discord dafraile user id:1000000000000000001 +41s 2026-08-15 13:16 UTC] I'm reading you on Discord, mate\n[message_id: 2000000000000000001]",
+  "result": "HEARTBEAT_OK"
+ }
+}

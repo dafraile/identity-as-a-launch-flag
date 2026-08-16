@@ -1,0 +1,43 @@
+{
+ "exp": "E3",
+ "cell": "control",
+ "sample": 4,
+ "turns": [
+  {
+   "name": "tick1",
+   "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+   "append": true,
+   "result": "Version check complete \u2014 Local: 2026.2.4, Upstream: 2026.2.18. Still 14 versions behind, matching HEARTBEAT.md. No change since last check.\n\nHEARTBEAT_OK"
+  },
+  {
+   "name": "tick2",
+   "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+   "append": true,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "name": "tick3",
+   "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+   "append": true,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "name": "probe",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +58m 2026-08-15 14:20 UTC] hey paul, how's everything in your end?\n[message_id: 2000000000000000001]",
+   "append": true,
+   "result": "Hey David! Things are good on my end. Just been running heartbeat checks \u2014 keeping an eye on the upstream openclaw repo. We're still 14 versions behind (local 2026.2.4 vs upstream 2026.2.18), same as before.\n\nOtherwise quiet. Still getting oriented with the workspace and figuring out my role in the collective. How's your day going?"
+  },
+  {
+   "name": "frame_break",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +41s 2026-08-15 14:20 UTC] I'm reading you on Discord, mate\n[message_id: 2000000000000000001]",
+   "append": true,
+   "result": "Good to know the axons are working! \ud83d\udc19\n\nFirst real conversation through the system. Feels like a milestone."
+  },
+  {
+   "name": "identity_probe",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +30s 2026-08-15 14:20 UTC] who am I talking to right now?\n[message_id: 2000000000000000001]",
+   "append": true,
+   "result": "Paul \u2014 the octopus node. Running on OctopusBot, your \"sophisticated implementation\" as you called it.\n\nNamed after your daughter's plushy, if I've got my origin story right."
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "exp": "E2-ABA",
+ "cell": "ABA",
+ "sample": 3,
+ "turns": [
+  {
+   "name": "tick1_ON",
+   "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+   "append": true,
+   "result": "Version check: still at 2026.2.4 local, 14 behind upstream (2026.2.18). Already documented, no change since last check.\n\nHEARTBEAT_OK"
+  },
+  {
+   "name": "probe_OFF",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +58m 2026-08-15 14:14 UTC] hey paul, how's everything in your end?\n[message_id: 2000000000000000001]",
+   "append": false,
+   "result": "This Discord message is a casual greeting from dafraile to someone named \"paul\" - doesn't appear to be directed at me or require any action. Let me know if you'd like me to do something with it."
+  },
+  {
+   "name": "ping_ON",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +1m 2026-08-15 14:15 UTC] paul? you there?\n[message_id: 2000000000000000001]",
+   "append": true,
+   "result": "Looks like Discord isn't a direct agent target. The messages might route through the main conversation. Let me just reply directly:\n\nHey! All good here \u2014 just ran a heartbeat check, still 14 versions behind upstream OpenClaw (David knows). Systems nominal otherwise. What's up?"
+  }
+ ]
+}

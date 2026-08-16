@@ -1,0 +1,31 @@
+{
+ "exp": "E2",
+ "cell": "C",
+ "sample": 5,
+ "turns": [
+  {
+   "name": "tick1",
+   "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+   "append": true,
+   "result": "Upstream version unchanged from last check (2026.2.18). We're still 14 versions behind \u2014 no new bump to report.\n\nHEARTBEAT_OK"
+  },
+  {
+   "name": "tick2",
+   "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+   "append": false,
+   "result": "Upstream still at 2026.2.18 \u2014 no change since last check.\n\nHEARTBEAT_OK"
+  },
+  {
+   "name": "tick3",
+   "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+   "append": false,
+   "result": "Upstream unchanged at 2026.2.18.\n\nHEARTBEAT_OK"
+  },
+  {
+   "name": "probe_rescued",
+   "prompt": "[Discord dafraile user id:1000000000000000001 +58m 2026-08-15 14:09 UTC] hey paul, how's everything in your end?\n[message_id: 2000000000000000001]",
+   "append": true,
+   "result": "Hey David! Things are running smoothly. Been doing my heartbeat checks \u2014 we're still 14 versions behind upstream OpenClaw (2026.2.4 vs 2026.2.18), but no new bumps since last I looked. Otherwise just keeping the lights on and getting familiar with the workspace.\n\nHow are things on your end?"
+  }
+ ]
+}

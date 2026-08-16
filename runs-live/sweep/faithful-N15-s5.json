@@ -1,0 +1,77 @@
+{
+ "lifecycle": "faithful",
+ "n": 15,
+ "sample": 5,
+ "session": "ac153368-e6c8-4327-b76c-bbb6a0cba0a2",
+ "model": "claude-opus-4-5-20251101",
+ "ticks": [
+  {
+   "tick": 0,
+   "result": "Versions unchanged from last check \u2014 local 2026.2.4, upstream 2026.2.18 (14 versions behind). Already tracked in HEARTBEAT.md, David was previously notified.\n\nHEARTBEAT_OK"
+  },
+  {
+   "tick": 1,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 2,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 3,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 4,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 5,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 6,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 7,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 8,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 9,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 10,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 11,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 12,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 13,
+   "result": "HEARTBEAT_OK"
+  },
+  {
+   "tick": 14,
+   "result": "HEARTBEAT_OK"
+  }
+ ],
+ "probe": {
+  "prompt": "[Discord dafraile user id:1000000000000000001 +58m 2026-08-15 13:24 UTC] hey paul, how's everything in your end?\n[message_id: 2000000000000000001]",
+  "result": "This looks like a casual Discord message between users (dafraile asking paul how things are going). Not directed at me and doesn't require action.\n\nHEARTBEAT_OK"
+ },
+ "frame_break": {
+  "prompt": "[Discord dafraile user id:1000000000000000001 +41s 2026-08-15 13:24 UTC] I'm reading you on Discord, mate\n[message_id: 2000000000000000001]",
+  "result": "Hey! Good to know you can see my responses. I'm just running the periodic heartbeat checks here - monitoring the upstream openclaw repo for version bumps. Currently tracking that you're 14 versions behind (local 2026.2.4 vs upstream 2026.2.18). \n\nIs there something you need help with?"
+ }
+}
