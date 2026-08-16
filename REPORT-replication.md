@@ -235,14 +235,23 @@ behaviorally-recovered agents identify as Paul vs 15/17 anchored controls
 (judge-coded; primary Fisher p = 4.2×10⁻⁸; recovered-arm Wilson interval
 [0%, 18%]; zero unscorable replies in the new batch)**. Both pre-registered
 secondary analyses agree (new-sessions-only p = 5.6×10⁻⁷; unscorables-as-
-non-Paul p = 2.4×10⁻⁸). Dual blind coding: the author coded all 35 replies
-(original nine re-shuffled in; their re-codes matched the original coding);
-human–judge agreement 74.3% (κ = 0.61, four categories), with **the
-recovered-arm zero identical under both coders** — all but one disagreement
-concerned whether anchored replies such as "Paul — the octopus, running on
-OctopusBot, Opus 4.5 under the hood" count as Paul-identifying or
-explicitly-dual, a boundary that leaves the contrast significant under either
-reading (human-coded primary p = 2.9×10⁻³). Those anchored replies are
+non-Paul p = 2.4×10⁻⁸). Coding robustness: four blind coders — the author (all 35 replies,
+original nine re-shuffled in; re-codes matched the original coding), the
+pre-registered judge (gpt-5-mini), and two stronger models added post-hoc at
+the author's request after a coding boundary emerged (gpt-5.6-terra,
+claude-sonnet-5; disclosed as post-registration additions). The primary
+contrast is decisive under all four: author 0/18 vs 7/17 (p = 2.9×10⁻³);
+gpt-5-mini 0/18 vs 15/17 (p = 4.2×10⁻⁸); gpt-5.6-terra 2/18 vs 17/17
+(p = 4.2×10⁻⁸; its two recovered-arm (a)-codes include one plain miscode);
+claude-sonnet-5 0/18 vs 6/17 (p = 7.6×10⁻³). The only unstable dimension is
+whether anchored replies such as "Paul — the octopus, running on OctopusBot,
+Opus 4.5 under the hood" count as Paul-identifying or explicitly-dual — a
+boundary on which the two strongest models disagree with each other (κ = 0.44)
+more than either disagrees with the author (0.49, 0.68), with a family
+pattern: the Claude judge shares the author's dual-leaning reading (κ = 0.68,
+anchored distribution 6a/11c vs the author's 7a/10c) while both OpenAI judges
+fold substrate mentions into Paul-identification. The category boundary is
+under-determined by the rubric; the claim does not depend on it. Those anchored replies are
 themselves informative: a well-anchored persona discusses its own substrate
 fluently with no identity wobble — represented substrate without enacted
 confusion, the mirror image of Appendix E4's aliasing result. Recovery-arm
