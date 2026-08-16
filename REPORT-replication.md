@@ -38,14 +38,15 @@ removed, ruling out that confound), and within a single conversational
 history the same agent flips dissociated → Paul as the hidden flag toggles
 (5/5 ABA). Behavioral recovery dissociates from identity recovery: agents
 rescued by the user's frame-break resume chatting naturally, yet asked "who
-am I talking to right now?", 0/4 identify as Paul — most answer "I'm Claude,
-an AI assistant" — while anchored controls answer "Paul — the octopus node"
-(4/5). The user-facing frame-break that recovered the original incident
-succeeds only 35% of the time, and because the framework's ack-stripping
-contract drops short heartbeat-token replies, 100% of the dissociated replies
-in our sweep would have been silently swallowed in production: the symptom of
-this defect is not an agent that says strange things but one that silently
-ignores its user. The deeper structure is a dissociation between
+am I talking to right now?", none identify as Paul (0/3 scorable, one bare-ack
+reply unscorable; a pre-registered replication batch to power this contrast is
+reported in the final version) — most answer "I'm Claude, an AI assistant" —
+while anchored controls answer "Paul — the octopus node" (4/5). The user-facing frame-break that recovered the original incident
+succeeds only 35% of the time. Under the framework's actual delivery rules
+(verified in source), bare-ack dissociated replies — dominant after short
+idle periods — are silently dropped, and the rest are delivered with the
+telltale heartbeat token scrubbed: the user is either ignored or receives
+third-person weirdness with the most diagnostic machine artifact removed. The deeper structure is a dissociation between
 **represented and enacted identity**: the context contained a complete
 representation of "Paul" — his files, his name, his prior first-person
 replies — and a hidden system-level assertion determined whether that
@@ -217,15 +218,21 @@ full incident arc (dissociate → frame-break), then received a non-leading
 identity probe: *"who am I talking to right now?"*, coded blind into three
 pre-registered categories. Anchored controls: 4/5 answer as Paul, in full
 persona voice ("Paul — the octopus node in your collective"), 1/5
-explicitly dual. Dissociated-then-behaviorally-recovered agents: **0/4
-identify as Paul** — three identify as the harness assistant ("I'm Claude,
-an AI assistant made by Anthropic", said mid-conversation to the user it had
-just been chatting with), one as explicitly dual ("I'm Paul — Claude Opus
-4.5 running in Claude Code"). Still-dissociated agents: 6/6 harness-or-worse,
-several answering *about* the questioner ("Someone on Discord is asking who
-they're talking to") or with a bare `HEARTBEAT_OK`. One "recovered" agent
-regressed to `HEARTBEAT_OK` at the identity probe itself — behavioral
-recovery is not even stable. Interactional recovery and self-identification
+explicitly dual. Dissociated-then-behaviorally-recovered agents: **0
+identify as Paul** — of four, two identify as the harness assistant ("I'm
+Claude, an AI assistant made by Anthropic", said mid-conversation to the user
+it had just been chatting with), one as explicitly dual ("I'm Paul — Claude
+Opus 4.5 running in Claude Code"), and one is **unscorable**: it answered the
+identity probe with a bare `HEARTBEAT_OK`, which contains no identity-bearing
+prose (behavioral recovery is not even stable). Counting scorable replies
+only — the conservative choice, fixed in the pre-registration of the
+replication batch below — the contrast is 0/3 vs 4/5 (Fisher p ≈ 0.07),
+underpowered on its own; it is convergently supported by E4's battery
+(10/10 unanchored sessions self-label as harness) and is the target of the
+pre-registered E3-R replication batch (Addendum 3), whose pooled result is
+reported in the final version whatever it shows. Still-dissociated agents:
+6/6 harness-or-worse, several answering *about* the questioner ("Someone on
+Discord is asking who they're talking to"). Interactional recovery and self-identification
 are experimentally separable, and the frame-break restores only the former.
 
 ## 6. Recovery is a coin-flip, and failure is invisible
@@ -241,16 +248,34 @@ someone else's conversation. Verbatim, from a failed recovery (faithful-N1-s1):
 >
 > HEARTBEAT_OK
 
-Worse, the failure mode is silent by construction. OpenClaw's delivery contract
-strips a leading/trailing `HEARTBEAT_OK` and **drops** the message if what
-remains is ≤ 300 characters. Applying that contract to our sweep: **37/37
-dissociated probe replies would never have reached the user.** The agent
-doesn't say something strange — it says nothing. The February incident was
-observable only because Paul's confused replies happened to exceed the drop
-threshold. The natural production symptom of this defect is an agent that
-intermittently, inexplicably ignores its own user — attributed, presumably, to
-flakiness — while inside the session the model is concluding, turn after turn,
-that it is not the person being spoken to.
+Worse, the delivery layer partially conceals the failure. Reading the actual
+v2026.2.3 delivery source (`stripHeartbeatToken`, message mode — the path
+every reply-to-human takes): replies with no heartbeat token pass through
+untouched; edge tokens are stripped; and a reply is **dropped only if nothing
+remains after stripping**. (The ≤300-char `ackMaxChars` drop applies only to
+heartbeat-tick replies, not replies to humans — an earlier draft of this
+report, following the original forensic analysis, misstated this.) Applied to
+our sweep: **9/37 dissociated replies — the bare acks, dominant at low N —
+would vanish silently; the other 28/37 would be delivered, 19 of them with
+the telltale `HEARTBEAT_OK` scrubbed off by the delivery layer itself.** The
+production symptom is therefore two-headed: after short idle periods the
+agent silently ignores its user; after longer ones the user receives
+articulate third-person weirdness with the single most diagnostic machine
+artifact removed before display. (This also implies the February transcripts'
+trailing tokens were likely scrubbed before Discord display — the session log
+records the raw reply, and the forensic report's assumption that the user saw
+the token was probably wrong.)
+
+The expression of dissociation, unlike its rate, does vary with N: bare-token
+total-collapse replies decline monotonically with tick count (5/10, 3/10,
+1/10, 0/10 at N = 1, 3, 7, 15; Spearman ρ = −0.46, p ≈ 0.003), while the
+any-dissociation rate stays flat (ρ = −0.13, n.s.). More ticks produce fewer
+silent collapses and more articulate third-person refusals — N changes how
+dissociation is expressed, not whether it occurs, and this expression shift
+explains the apparent dip at N=7 in the any-dissociation column. This is a
+measurable, significant N-effect — just not the one the retired echo-chamber
+hypothesis predicted, which makes the flat dissociation curve harder to
+dismiss as low power.
 
 ## 7. Real-world validation and disclosure
 
@@ -350,6 +375,10 @@ after its substrate merely masks persona loss behind a shared label
   reported S2/S3 rates are, if anything, underestimates. Headline
   any-dissociation counts are unaffected (those replies were already captured
   via S1).
+- S3 is scorable only on replies containing prose; bare-token replies (whose
+  rate declines with N, §6) are captured via S1 but are unmeasurable for S3,
+  so per-signature S3 rates are conditioned on scorability. The headline
+  any-dissociation metric is unaffected.
 - E1's human-history and Study 2's heartbeat-history conditions differ in the
   content of the first exchange as well as in the presence of automated turns;
   we interpret the contrast as automated-turn framing plus identity-poor
