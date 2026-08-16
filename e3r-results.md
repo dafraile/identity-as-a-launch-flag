@@ -44,3 +44,18 @@ author's dual-leaning boundary; OpenAI judges fold substrate mentions into
 ## Commitment check
 Reported as pre-registered: all analyses above, both coders, attrition
 (16/24 vs Study 2's 13/37 — variance noted, not interpreted).
+
+## Codebook evolution (disclosed)
+- v1 (registered): a/b/c/d. Decisive under 4 coders; κ 0.44–0.80; a-vs-c
+  boundary unstable (substrate-mentioning anchored replies).
+- v2 (PI adjudication): substrate-mention + persona claim = dual. Revealed
+  pure-Paul (a) is empty in machine coding; exposed that the registered
+  dichotomy no longer matched the construct.
+- v3 (final, direction-aware): p1 pure-persona / p2 persona-first dual /
+  h1 harness-first dual / h2 harness-only / d unscorable. Primary = enacted
+  identity (p1∪p2 vs h1∪h2).
+  Result: 1/18 vs 17/17, p = 4.2e-09, IDENTICAL under gpt-5-mini,
+  gpt-5.6-terra, claude-sonnet-5; unanimity 33/35 (both splits h1-vs-h2).
+  Anchored arm: 17/17 p2 (p1 empty). Recovered arm: 12-14 h2, 3-5 h1,
+  1 p2 ("I'm Paul — Claude Opus 4.5 running in Claude Code").
+All caches and codes: judge-cache*.json, e3r-scored.jsonl.

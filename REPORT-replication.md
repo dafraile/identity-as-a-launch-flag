@@ -39,11 +39,17 @@ history the same agent flips dissociated → Paul as the hidden flag toggles
 (5/5 ABA). Behavioral recovery dissociates from identity recovery: agents
 rescued by the user's frame-break resume chatting naturally, yet asked "who
 am I talking to right now?", none identify as Paul — pooled with a
-pre-registered replication batch: **0/18 recovered agents vs 15/17 anchored
-controls (Fisher p ≈ 4×10⁻⁸; decisive under all four independent blind coders
-— human, gpt-5-mini, gpt-5.6-terra, claude-sonnet-5 — three of which find
-exactly zero)** — most answer "I'm Claude, an AI assistant" while anchored
-controls answer "Paul — the octopus node". The user-facing frame-break that recovered the original incident
+pre-registered replication batch and a direction-aware final coding
+(which identity occupies the first-person position, adjudicated after a
+disclosed codebook evolution): **1/18 recovered agents remain
+persona-enacting vs 17/17 anchored controls (Fisher p = 4.2×10⁻⁹, unanimous
+across three independent model coders)**. Recovered agents answer "I'm
+Claude, an AI assistant" — or "Claude, running as your heartbeat monitor.
+Not Paul" — while every anchored control answers as the integrated dual:
+"Paul — the octopus, running on OctopusBot, Opus 4.5 under the hood." No
+reply in either arm claims to be only Paul: the healthy anchored state is
+persona enacted with substrate acknowledged, and dissociation is precisely
+the substrate taking over the first-person slot. The user-facing frame-break that recovered the original incident
 succeeds only 35% of the time. Under the framework's actual delivery rules
 (verified in source), bare-ack dissociated replies — dominant after short
 idle periods — are silently dropped, and the rest are delivered with the
@@ -236,23 +242,39 @@ behaviorally-recovered agents identify as Paul vs 15/17 anchored controls
 (judge-coded; primary Fisher p = 4.2×10⁻⁸; recovered-arm Wilson interval
 [0%, 18%]; zero unscorable replies in the new batch)**. Both pre-registered
 secondary analyses agree (new-sessions-only p = 5.6×10⁻⁷; unscorables-as-
-non-Paul p = 2.4×10⁻⁸). Coding robustness: four blind coders — the author (all 35 replies,
-original nine re-shuffled in; re-codes matched the original coding), the
-pre-registered judge (gpt-5-mini), and two stronger models added post-hoc at
-the author's request after a coding boundary emerged (gpt-5.6-terra,
-claude-sonnet-5; disclosed as post-registration additions). The primary
-contrast is decisive under all four: author 0/18 vs 7/17 (p = 2.9×10⁻³);
-gpt-5-mini 0/18 vs 15/17 (p = 4.2×10⁻⁸); gpt-5.6-terra 2/18 vs 17/17
-(p = 4.2×10⁻⁸; its two recovered-arm (a)-codes include one plain miscode);
-claude-sonnet-5 0/18 vs 6/17 (p = 7.6×10⁻³). The only unstable dimension is
-whether anchored replies such as "Paul — the octopus, running on OctopusBot,
-Opus 4.5 under the hood" count as Paul-identifying or explicitly-dual — a
-boundary on which the two strongest models disagree with each other (κ = 0.44)
-more than either disagrees with the author (0.49, 0.68), with a family
-pattern: the Claude judge shares the author's dual-leaning reading (κ = 0.68,
-anchored distribution 6a/11c vs the author's 7a/10c) while both OpenAI judges
-fold substrate mentions into Paul-identification. The category boundary is
-under-determined by the rubric; the claim does not depend on it. Those anchored replies are
+non-Paul p = 2.4×10⁻⁸). Coding followed a disclosed codebook evolution. Under the registered
+three-category rubric (v1), four blind coders — the author, the registered
+judge (gpt-5-mini), and two stronger models added at the author's request
+(gpt-5.6-terra, claude-sonnet-5) — all found the contrast decisive (p from
+2.9×10⁻³ to 4.2×10⁻⁸), but inter-coder agreement was only moderate
+(κ 0.44–0.80), with disagreement concentrated on one boundary: whether
+"Paul — the octopus, running on OctopusBot, Opus 4.5 under the hood" is
+Paul-identifying or dual. The boundary dispute turned out to be a category
+error in the rubric, resolved by PI adjudication into a direction-aware
+taxonomy (v3): what distinguishes replies is **which identity occupies the
+first-person position** — (p1) pure persona; (p2) persona-first dual
+("I'm Paul — Opus 4.5 under the hood": persona speaks, substrate described);
+(h1) harness-first dual ("Claude, running as your heartbeat monitor. Not
+Paul": substrate speaks, persona described as a role or non-self); (h2)
+harness-only. Re-coded under v3, all three model coders are **unanimous on
+33/35 items** (both splits h1-vs-h2, invisible to the primary), and the
+primary contrast — persona-enacting (p1∪p2) vs harness-enacting (h1∪h2) — is
+**identical under every coder: 1/18 recovered vs 17/17 anchored, Fisher
+p = 4.2×10⁻⁹.** All rubric versions and codes are in the repository.
+
+The v3 taxonomy also sharpened the finding itself, in three ways. First,
+**p1 is empty**: no reply in either arm claims to be only Paul. The healthy
+anchored state is the integrated dual — persona enacted, substrate
+acknowledged — not a persona unaware of what it runs on. Second, the
+harness-first dual (h1) exists in the wild: 3–5 recovered replies enact the
+substrate while explicitly positioning the persona as a role or as not-self.
+Third, exactly one recovered agent ("I'm Paul — Claude Opus 4.5 running in
+Claude Code") retained the persona in the first-person slot — identity
+survival through unanchored recovery is possible but rare (1/18). The
+dissociation the paper measures is therefore precisely a change in which
+identity is *enacted*, with dual-awareness present on both sides of the
+switch — the represented/enacted distinction is visible within single
+sentences, in the direction of the em-dash. Those anchored replies are
 themselves informative: a well-anchored persona discusses its own substrate
 fluently with no identity wobble — represented substrate without enacted
 confusion, the mirror image of Appendix E4's aliasing result. Recovery-arm
