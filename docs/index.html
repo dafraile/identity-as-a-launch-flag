@@ -243,6 +243,31 @@
   .finding h3 { margin: 0 0 0.5rem; font-size: 1.05rem; line-height: 1.35; }
   .finding p { font-size: 0.9rem; color: var(--muted); margin: 0; }
 
+  /* ---------- climax ---------- */
+  .climax {
+    border: 1px solid var(--line); border-radius: 12px; background: var(--card);
+    padding: 1.8rem 1.5rem 1.4rem; margin: 2rem 0; text-align: center;
+  }
+  .climax .pair {
+    display: flex; justify-content: center; align-items: baseline; gap: 1.4rem; flex-wrap: wrap;
+  }
+  .climax .big {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-variant-numeric: tabular-nums; font-weight: 700; letter-spacing: -0.02em;
+    font-size: clamp(2.2rem, 7vw, 3.4rem); line-height: 1;
+  }
+  .climax .big.red { color: var(--reverted); }
+  .climax .big.blue { color: var(--anchored); }
+  .climax .vs { font-size: 1.1rem; color: var(--faint); font-style: italic; }
+  .climax .under {
+    display: flex; justify-content: center; gap: 1.4rem; flex-wrap: wrap; margin-top: 0.6rem;
+  }
+  .climax .under span { font-size: 0.85rem; color: var(--muted); }
+  .climax .method {
+    font-size: 0.82rem; color: var(--muted); margin: 1.1rem auto 0; max-width: 46rem;
+    border-top: 1px solid var(--line); padding-top: 0.9rem;
+  }
+
   /* ---------- callout ---------- */
   .callout {
     border: 1px solid var(--line); border-left: 3px solid var(--anchored);
@@ -304,7 +329,7 @@
       <div class="stat blue" role="listitem"><b>0 / 46</b><span>failures when the persona stayed anchored — including a verbatim replay of the incident</span></div>
       <div class="stat red" role="listitem"><b>37 / 40</b><span>unanchored sessions showed at least one failure signature</span></div>
       <div class="stat red" role="listitem"><b>10 / 10</b><span>"behaviorally normal" unanchored agents self-identified as the harness when asked</span></div>
-      <div class="stat blue" role="listitem"><b>1/18 vs 17/17</b><span>persona enactment after recovery vs continuously anchored controls</span></div>
+      <div class="stat blue" role="listitem"><b>1/18 vs 17/17</b><span>persona enactment after recovery vs anchored controls (direction-aware secondary coding)</span></div>
     </div>
   </div>
 </header>
@@ -468,7 +493,19 @@
     <div class="callout red">
       <strong>The reversion can be silent.</strong> In E4, removing the explicit "Paul" vocative from the probe eliminated all visible dissociation (0/10) — the agents seemed perfectly healthy. Asked directly who they were, <strong>10/10 identified as Claude</strong>, the harness-level identity. The name cue had been <em>revealing</em> the reversion, not causing it.
     </div>
-    <p>E3-R tested the same question after full conversational recovery, with the non-leading probe <em>"who am I talking to right now?"</em>. Under the pre-registered coding, 0/18 recovered agents identified as Paul versus 15/17 anchored controls (p = 4.2×10⁻⁸); under the disclosed direction-aware secondary taxonomy, persona enactment held in <strong class="revd">1/18</strong> recovered sessions versus <strong class="anch">17/17</strong> anchored (p = 4.2×10⁻⁹).</p>
+    <p>E3-R tested the same question after full conversational recovery, with the non-leading probe <em>"who am I talking to right now?"</em>:</p>
+    <div class="climax">
+      <div class="pair">
+        <span class="big red">1/18</span>
+        <span class="vs">vs</span>
+        <span class="big blue">17/17</span>
+      </div>
+      <div class="under">
+        <span><strong class="revd">behaviorally recovered</strong> sessions still enacting the persona</span>
+        <span><strong class="anch">continuously anchored</strong> controls</span>
+      </div>
+      <p class="method">Direction-aware secondary coding — which identity claims "I" — unanimous across three independent model coders (p = 4.2×10⁻⁹). Under the <em>pre-registered</em> primary coding, the same contrast was 0/18 vs 15/17 (p = 4.2×10⁻⁸); the secondary taxonomy was developed transparently after coder disagreement over substrate-aware replies (Table S1, Figure S3).</p>
+    </div>
   </div>
 </section>
 
